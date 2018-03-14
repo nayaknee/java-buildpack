@@ -15,6 +15,6 @@
 
 # Configuration for the Diagnostics Agent framework
 ---
-version: 9.40.+
-repository_root: https://s3.amazonaws.com/sftpgateway-i-094eb8b749e549513/piotrf/uploads
+version: 9.50.+
+repository_root: https://s3.us-east-2.amazonaws.com/diag-agent/
 diag.probe.group: $(ruby -e "require 'json' ; a = JSON.parse(ENV['VCAP_APPLICATION']); puts \"#{a['application_name']}\"")
